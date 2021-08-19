@@ -1,0 +1,37 @@
+[
+    {   
+        "id":"1",
+        "tittel": "Syntetiske data",
+        "beskrivelse": "Sikre testdata for NAV som ivaretar personvern",
+        "kunde": "NAV",
+        "teknologi": ["Java", "Python", "PyTorch", "SciKit Learn"]
+    },
+    {
+        "id":"2",
+        "tittel": "Asylbarn.no",
+        "beskrivelse": "Nettportal der barna kan følge alle de generelle stegene i sin asylsak",
+        "kunde": "UDI",
+        "teknologi": ["Episerver CMS", "headless API", "Azure API Management"]
+    }, 
+    {
+        "id":"3",
+        "tittel": "Skatteetaten.no",
+        "beskrivelse": "Reetablering av Skatteetaten.no",
+        "kunde": "Skatteetaten",
+        "teknologi": ["EPiServer", "Microsoft Azure", "Bootstrap", "Vue.js", ".NET Core"]
+    },
+    {
+        "id":"4",
+        "tittel": "Digitalt medlemskort",
+        "beskrivelse": "Digitalt medlemskort og mobil betalingsløsning",
+        "kunde": "Den Norske Turistforening",
+        "teknologi": ["Angular", "JavaScript", "HTML5","CSS"]
+    },
+    {
+        "id":"5",
+        "tittel": "Samhandlingsløsning",
+        "beskrivelse": "Samhandlingsløsning for behandling av søknader",
+        "kunde": "NOKUT",
+        "teknologi": ["C#", "ASP.NET", "Entity Framework", "Microsoft SQL Server"]
+    }
+]

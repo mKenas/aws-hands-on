@@ -1,0 +1,27 @@
+#!/bin/bash -xe
+
+yum update -y
+
+amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+yum install -y httpd mariadb-server
+
+
+groupadd www
+usermod -a -G www ec2-user
+
+cd /var/www/
+curl -O https://wordpress.org/latest.tar.gz && tar -zxf latest.tar.gz
+rm -rf /var/www/html
+mv wordpress /var/www/html
+
+chown -R root:apache /var/www
+chmod 2775 /var/www
+find /var/www -type d -exec chmod 2775 {} +
+find /var/www -type f -exec chmod 0664 {} +
+
+echo '<?php phpinfo(); ?>' > /var/www/html/phpinfo.php
+service httpd start
+chkconfig httpd on
+
+service mariadb start
+chkconfig mariadb on
